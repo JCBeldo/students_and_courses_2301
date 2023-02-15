@@ -5,7 +5,6 @@ class Student
     @name = student[:name]
     @age = student[:age]
     @scores = []
-    @grades = []
   end
 
   def log_score(score)
@@ -14,6 +13,5 @@ class Student
 
   def grade
   grade = @scores.sum(0.0) / @scores.size
-  @grades << grade
   end
 end
