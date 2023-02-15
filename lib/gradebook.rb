@@ -5,4 +5,12 @@ class Gradebook
     @instructor = instructor
     @courses = []
   end
+
+  def add_course(course)
+    @courses.push(course)
+  end
+
+  def list_all_students
+    @course.students
+  end
 end
